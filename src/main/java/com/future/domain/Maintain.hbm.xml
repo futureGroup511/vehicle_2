@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.future.domain">
+
+    <class name="Maintain" table="maintains">
+
+        <id name="maintainId" type="java.lang.Integer">
+            <column name="MAINTAIN_ID" />
+            <generator class="native" />
+        </id>
+
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+
+        <property name="userName" type="java.lang.String">
+            <column name="USER_NAME" />
+        </property>
+
+        <property name="vehicleId" type="java.lang.String">
+            <column name="VEHICLE_ID" />
+        </property>
+
+        <property name="plateId" type="java.lang.String">
+            <column name="PLATE_ID" />
+        </property>
+        
+        <property name="userPhone" type="java.lang.String">
+            <column name="USER_PHONE"/>
+        </property>
+        
+        <property name="userId" type="java.lang.Integer">
+            <column name="USERS_ID" />
+        </property>
+        
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+          
+        <many-to-one name="judge" class="BaseDict" column="JUDGE" lazy="false"></many-to-one>
+        <many-to-one name="operationStatus" class="BaseDict" column="OPERATION_STATUS" lazy="false"></many-to-one>
+        
+    </class>
+</hibernate-mapping>

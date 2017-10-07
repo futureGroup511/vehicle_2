@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   
+    <class name="com.future.domain.BaseDict" table="base_dict">
+   
+        <id name="dict_id" type="java.lang.String">
+            <column name="DICT_ID" />
+            <generator class="assigned" />
+        </id>
+   
+        <property name="dict_type_code" type="java.lang.String">
+            <column name="DICT_TYPE_CODE" />
+        </property>
+   
+        <property name="dict_type_name" type="java.lang.String">
+            <column name="DICT_TYPE_NAME" />
+        </property>
+   
+        <property name="dict_item_name" type="java.lang.String">
+            <column name="DICT_ITEM_NAME" />
+        </property>
+   
+        <property name="dict_item_code" type="java.lang.String">
+            <column name="DICT_ITEM_CODE" />
+        </property>
+   
+        <property name="dict_sort" type="java.lang.Integer">
+            <column name="DICT_SORT" />
+        </property>
+   
+        <property name="dict_enable" type="java.lang.Character">
+            <column name="DICT_ENABLE" />
+        </property>
+   
+        <property name="dict_memo" type="java.lang.String">
+            <column name="DICT_MEMO" />
+        </property>
+   
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.future.domain">
+    
+    <class name="User" table="users">
+        
+        <id name="userId" type="java.lang.Integer">
+            <column name="USERS_ID" />
+            <generator class="native" />
+        </id>
+        
+        <property name="code" type="java.lang.String">
+            <column name="CODE" />
+        </property>
+        
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        
+        <property name="role" type="java.lang.String">
+            <column name="ROLE" />
+        </property>
+        
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+
+        <property name="vehicleNumber" type="java.lang.Integer">
+            <column name="VEHICLES_NUMBER" />
+        </property>
+        
+        <property name="maintainNumber" type="java.lang.Integer">
+            <column name="MAINTAINS_NUMBER" />
+        </property>
+
+        
+        <many-to-one name="judge" class="BaseDict" column="JUDGE" lazy="false"></many-to-one>
+        
+    </class>
+
+</hibernate-mapping>

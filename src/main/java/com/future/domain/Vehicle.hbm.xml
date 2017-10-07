@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.future.domain">
+
+    <class name="Vehicle" table="vehicles">
+
+        <id name="vehicleId" type="java.lang.String">
+            <column name="VEHICLE_ID" />
+            <generator class="assigned" />
+        </id>
+
+        <property name="plateId" type="java.lang.String">
+            <column name="PLATE_ID" />
+        </property>
+
+        <property name="model" type="java.lang.String">
+            <column name="MODEL" />
+        </property>
+
+        <property name="engineId" type="java.lang.String">
+            <column name="ENGINE_ID" />
+        </property>
+
+        <property name="carChassisId" type="java.lang.String">
+            <column name="CAR_CHASSIS_ID" />
+        </property>
+
+        <property name="manufactureDate" type="java.util.Date">
+            <column name="MANU_FACTURE_DATE" />
+        </property>
+        
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        
+        <property name="weight" type="double">
+            <column name="WEIGHT" />
+        </property>
+        
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        
+        <property name="userId" type="java.lang.Integer">
+            <column name="USERS_ID" />
+        </property>
+        
+        <property name="userName" type="java.lang.String">
+            <column name="USERS_NAME" />
+        </property>
+                
+        <property name="maintainNumber" type="java.lang.Integer">
+            <column name="MAINTAIN_NUMBER" />
+        </property>
+        
+        <many-to-one name="operationStatus" class="BaseDict" column="OPERATION_STATUS" lazy="false"></many-to-one>
+        <many-to-one name="judge" class="BaseDict" column="JUDGE" lazy="false"></many-to-one>
+        
+    </class>
+</hibernate-mapping>
