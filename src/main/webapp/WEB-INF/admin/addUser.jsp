@@ -105,7 +105,7 @@ padding:13px 30px;
             <span>账号：</span>
         </div>
         <div class="col-lg-6 col-md-6  col-xs-6">
-           <input type="text" name="code" id="code" class="form-control" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,6}$" required oninvalid="setCustomValidity('包含大小写字母和数字的组合，不能使用特殊字符，长度在4-6之间');" oninput="setCustomValidity('');"/>
+           <input type="text" name="code" id="code" class="form-control" required oninvalid="setCustomValidity('请输入账号');" oninput="setCustomValidity('');"/>
          </div> 
       <div class="col-lg-5 col-md-6  col-xs-6" id="passSpan">
             <span>密码：</span>
@@ -115,7 +115,7 @@ padding:13px 30px;
            <input type="hidden" name="password" id="after" value=""/>
          </div>
       <div class="col-lg-5 col-md-6  col-xs-6">
-            <span>车主名：</span>
+            <span>用户名：</span>
         </div>
         <div class="col-lg-6 col-md-6  col-xs-6">
            <input type="text" name="name" id="name" class="form-control" required oninvalid="setCustomValidity('请输入用户名');" oninput="setCustomValidity('');"/>
