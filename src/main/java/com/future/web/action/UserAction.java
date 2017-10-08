@@ -139,11 +139,8 @@ public class UserAction extends BaseData implements ModelDriven<User>{
 		List<User> u=userService.getAll();
 		for(User s:u){
 			if(s.getCode().equals(user.getCode())){
-				String str=s.getPhone();
-				String src=str.substring(str.length()-4,str.length());
 				request.put("user",s);
-				request.put("src",src);
-		  		return "phoneValidate";
+		  		return "updatePassword";
 			}else{
 		  		request.put("errorMeg","账号不正确");
 		  	}
@@ -151,26 +148,12 @@ public class UserAction extends BaseData implements ModelDriven<User>{
 	  		return "forgetPassword";
 	 }
 		
-	 //手机号验证
-	 public String phoneValidate() throws Exception{
-		 List<User> u=userService.getAll();
-		 for(User s:u){
-			if(s.getPhone().equals(user.getPhone())){
-				request.put("user",s);
-				return "updatePassword";	
-			}else{
-			  	request.put("error","手机号不正确");
-			}
-		  }
-		return "phoneValidate";	 
-	 }
 	
      //根据提供的手机号可以修改自己的密码
 	 public String updatePassword() throws Exception{
 		User u=userService.select(id);
 	  	u.setPassword(user.getPassword());
-	  	user=u;
-	  	userService.updateUser(user);
+	  	userService.updateUser(u);
 	  	request.put("successMeg","密码修改成功");
 	  	return "success";
 	  }

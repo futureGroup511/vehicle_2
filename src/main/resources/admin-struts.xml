@@ -28,7 +28,6 @@
 	      <result name="updatePassword">/updatePassword.jsp</result>
 	      <result name="success">/success.jsp</result>
 	      <result name="forgetPassword">/forgetPassword.jsp</result>
-	      <result name="phoneValidate">/phoneValidate.jsp</result>
 	      <result name="personal">/personal.jsp</result>
        </action>  
  
