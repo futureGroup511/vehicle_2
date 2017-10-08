@@ -238,7 +238,7 @@
           <td>重量</td>
           <td>车辆状态</td>
           <th>出厂日期</th>
-	      <th>车主 </th>
+	      <th>车主名 </th>
 	      <th>操作</th>
         </tr>
       </thead>

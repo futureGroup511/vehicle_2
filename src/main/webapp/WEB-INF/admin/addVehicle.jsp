@@ -133,8 +133,7 @@ html{
         </div>  
         <div class="col-lg-6 col-md-6  col-xs-6">        
            <select  id="category" name="category">
-			 	<option selected="selected">请选择</option>
-				<option value ="货运">货运</option>
+				<option selected="selected" value ="货运">货运</option>
 		  		<option value ="客运">客运</option>
 		   </select>
            
