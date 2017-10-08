@@ -307,7 +307,9 @@ public class VehicleAction extends BaseData implements ModelDriven<Vehicle>  {
 		// 对时间进行进行操作
 		Date endDate = getVehicleMaturityTime();
 		dc.add(Restrictions.lt("date", endDate));
-      		
+      	
+		dc.add(Restrictions.like("judge.dict_id", "12", MatchMode.ANYWHERE));
+		
 		// 判断并封装参数
 		if (StringUtils.isNotBlank(vehicle.getPlateId())) {
 			dc.add(Restrictions.like("plateId", "%" + vehicle.getPlateId() + "%"));
