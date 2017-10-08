@@ -77,7 +77,11 @@ public class VehicleAction extends BaseData implements ModelDriven<Vehicle>  {
 		//判断是否存在
 		User userByCode = userService.getUserByCode(user);
 		
-        if(!userByCode.getName().equals(user.getName())) {
+		if(userByCode==null) {
+			
+			request.put("vehicleMessage", "车辆添加失败, 不存在该车主");
+			
+		}else if(!userByCode.getName().equals(user.getName())) {
 			
 			request.put("vehicleMessage", "车辆添加失败, 不存在该车主");
 			
