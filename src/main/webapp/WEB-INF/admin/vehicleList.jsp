@@ -102,14 +102,14 @@ padding:13px 30px;
         <tr>
           <td>档案号</td>
           <td>车牌号</td>
-          <td>车的类别</td>
+          <td>车辆类型</td>
           <td>车辆型号</td>
           <td>发动机编号</td>
           <td>车底盘号衍射</td>
           <td>重量</td>
           <td>车辆状态</td>
           <th>出厂日期</th>
-	      <th>车主 </th>
+	      <th>车主名 </th>
 	      <th>维护信息的数量</th>
 	      <th>操作</th>
        </tr>

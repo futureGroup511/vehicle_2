@@ -89,7 +89,7 @@ padding:13px 30px;
   
    <div id="box">
        <div class="col-lg-5 col-md-6  col-xs-6" >
-            <span>车主姓名：</span>
+            <span>车主名：</span>
         </div>
         <div class="col-lg-6 col-md-6  col-xs-6">
            <input type="text" class="form-control" name="userName" required oninvalid="setCustomValidity('请填写车主姓名');" oninput="setCustomValidity('');"/>

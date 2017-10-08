@@ -108,7 +108,7 @@ html{
             <span>车主账号：</span>
         </div>
         <div class="col-lg-6 col-md-6  col-xs-6">
-           <input type="text" name="user.code" id="code" class="form-control"  required  oninvalid="setCustomValidity('请输入车主账号');" oninput="setCustomValidity('');" />
+           <input type="text" name="user.code" id="code" class="form-control"  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,6}$" required oninvalid="setCustomValidity('包含大小写字母和数字的组合，不能使用特殊字符，长度在4-6之间');" oninput="setCustomValidity('');" />
         </div>
      </div>
  	 <div class="box-innner">

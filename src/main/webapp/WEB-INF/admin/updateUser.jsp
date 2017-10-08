@@ -66,7 +66,7 @@ html{
            <input type="text" class="form-control" name="user1.code" value="${user1.code}"  required  oninvalid="setCustomValidity('请输入账号');" oninput="setCustomValidity('');" readonly="readonly"/>
          </div> 
       <div class="col-lg-5 col-md-6  col-xs-6">
-            <span>用户名：</span>
+            <span>车主名：</span>
         </div>
         <div class="col-lg-6 col-md-6  col-xs-6">
            <input type="text" class="form-control" name="user1.name" value="${user1.name}"  required oninvalid="setCustomValidity('请输入用户名');" oninput="setCustomValidity('');"/>

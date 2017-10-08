@@ -73,16 +73,16 @@ padding:13px 30px;
    			<input type="text" name="vehicle1.operationStatus" class="form-control" value="${vehicle1.operationStatus}" readonly="readonly">
    		</div>
    		<div class="col-lg-4 col-md-4  col-xs-4" >
-   			<span id="text">类型:</span>
+   			<span id="text">车辆类型:</span>
    		</div>
    		<div class="col-lg-8 col-md-8  col-xs-8" >
 			<select name="vehicle1.category" class="form-control" >
 				<c:if test="${vehicle1.category=='货运'}">
 					<option value="货运">货运</option>
-					<option value="汽运">汽运</option>
+					<option value="客运">客运</option>
 				</c:if>
-				<c:if test="${vehicle1.category=='汽运'}">
-					<option value="汽运">汽运</option>	
+				<c:if test="${vehicle1.category=='客运'}">
+					<option value="客运">客运</option>	
 					<option value="货运">货运</option>
 				</c:if>
 		    </select><br>

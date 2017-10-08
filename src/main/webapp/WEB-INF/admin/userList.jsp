@@ -99,9 +99,9 @@ html{
       <thead>
         <tr>
           <td>账号</td>
-          <td>用户名</td>
+          <td>车主名</td>
           <td>地址</td>
-          <td>联系方式</td>
+          <td>手机号</td>
           <td>车辆数目</td>
           <td>信息数目</td>
           <td>操作</td>

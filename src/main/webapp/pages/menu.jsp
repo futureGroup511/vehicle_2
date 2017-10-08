@@ -93,8 +93,7 @@
         
             <dl class="channel">
                 <dt class="a">维护信息管理<img class="pic" src="../images/select_xl01.png"></dt>
-                <dd class="first_dd"><a href="${pageContext.request.contextPath}/admin/MaintainAction_addMaintain" target="main">维护信息录入</a></dd>
-                <dd><a href="${pageContext.request.contextPath}/admin/MaintainAction_maintainList" target="main">查询维护信息</a></dd>
+                <dd class="first_dd"><a href="${pageContext.request.contextPath}/admin/MaintainAction_maintainList" target="main">查询维护信息</a></dd>
             </dl>
         
             <dl class="app">

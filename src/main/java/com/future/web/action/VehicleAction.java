@@ -246,7 +246,6 @@ public class VehicleAction extends BaseData implements ModelDriven<Vehicle>  {
 			
 			 dc.add(Restrictions.like("judge.dict_id", "12", MatchMode.ANYWHERE));
 			 dc.add(Restrictions.like("operationStatus.dict_id", "9", MatchMode.ANYWHERE));
-			 System.out.println(1);
 		}
 		
 		// 判断并封装参数

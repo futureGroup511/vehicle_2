@@ -92,7 +92,8 @@
         
             <dl class="custom">
                 <dt onClick="changeImage()" class="a">车辆管理<img class="pic" src="../images/select_xl01.png"></dt>
-                <dd class="first_dd"><a href="${pageContext.request.contextPath}/admin/VehicleAction_addVehicleList" target="main">管理车辆备案</a></dd>
+                <dd class="first_dd"><a href="${pageContext.request.contextPath}/admin/VehicleAction_addVehicle" target="main">新建车辆备案</a></dd>
+                <dd><a href="${pageContext.request.contextPath}/admin/VehicleAction_addVehicleList" target="main">管理车辆备案</a></dd>
                 <dd><a href="${pageContext.request.contextPath}/admin/VehicleAction_maturityVehicleList" target="main">查询到期车辆</a></dd>
                 <dd><a href="${pageContext.request.contextPath}/admin/VehicleAction_vehicleList" target="main">管理车辆信息</a></dd> 
             </dl>

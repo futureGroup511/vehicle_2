@@ -205,7 +205,7 @@
 <div id="innerhead">
  <div class="row">
    <div class="col-lg-5 col-md-5 col-xs-6">
-      <p>当前位置 >> 车辆管理>> 管理车辆备案    <c:if test="${vehicleMessage}">${vehicleMessage}</c:if></p>
+      <p>当前位置 >> 车辆管理>> 管理车辆备案   </p>
    </div>
   </div>
 </div>
@@ -230,8 +230,8 @@
         <tr>
           <td>多选框</td>
           <td>档案号</td>
-          <td>车排号</td>
-          <td>车的类别</td>
+          <td>车牌号</td>
+          <td>车辆类型</td>
           <td>车辆型号</td>
           <td>发动机编号</td>
           <td>车底盘号衍射</td>
