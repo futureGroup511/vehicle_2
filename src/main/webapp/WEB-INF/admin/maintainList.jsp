@@ -47,8 +47,6 @@
     .box{
     width:90%;
     height:50px;
-    margin-left: 50px;
-    margin-top:20px;
     }
    
    .box span{
@@ -57,12 +55,10 @@
   }
     .left{
     width:60%;
-  
-    
     float:left;
     }
     .right{
-    float:right;
+    float:left;
     width:40%;
  
   
@@ -98,17 +94,26 @@
   background:rgb(153,200,207);
 
  }
- 
+ .btn1{
+  float:right;
+  margin-right:100px;
+  margin-top:-25px;
+ } 
   .picture{
  position:absolute;
  top:60px;
  left:70%;
  }
+ .pic{
+ position:absolute;
+ right:15%;
+ 
+ }
 </style>
 </head>
 <body>
 <form id="pageForm" action="${pageContext.request.contextPath}/admin/MaintainAction_maintainList" method="post">
-<img src="${path }images/car.png" class="picture">
+
  <div id="innerhead">
  <div class="row">
    <div class="col-lg-5 col-md-5 col-xs-6">
@@ -136,6 +141,7 @@
     </div><br>
  	 </div>
      <div class="right">
+     <img class="pic" src="${path }images/car.png" class="picture">
      	 <div class="input">
         <span>车辆档案号：</span>
         <div class="col-lg-6 col-md-6  col-xs-6">
@@ -148,7 +154,7 @@
           <input type="text" name="userName" id="userName" class="form-control" placeholder="请输入车主名字" value="${userName}">
         </div> 
          
-        <button class="butt" type="submit">筛&nbsp;&nbsp;选</button>
+       
        
      </div>
       
@@ -156,9 +162,11 @@
     	<!-- 隐藏域.当前页码 -->
 		<input type="hidden" name="currentPage" id="currentPageInput" value="${pageBean.currentPage}" />
 		<!-- 隐藏域.每页显示条数 -->
-        <input type="hidden" name="pageSize" id="pageSizeInput"   value="${pageBean.pageSize}" />
-    </div><br>
-    
+        <input type="hidden" name="pageSize" id="pageSizeInput"   value="${pageBean.pageSize}" />    
+  
+    </div>    
+     <input class="btn1 butt" type="submit" value="筛选">
+     
  
 </form>
   <div class="tab" style="z-index:-1"><!-- 表格开始 -->
