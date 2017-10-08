@@ -40,9 +40,9 @@ public class BaseAction  extends  BaseData  implements ModelDriven<User>{
 	    
 		//2.判断用户是否存在 ，不存在抛出异常       判断密码是否正确，不正确抛出异常
 	    if(existU == null) {
-	    	request.put("login", "账号输入错误！");
+	    	request.put("login", "账号输入错误，请重新输入账号！！");
 	    }else if(!existU.getPassword().equals(user.getPassword())) {
-	    	request.put("login", "密码错误！！"); 
+	    	request.put("login", "密码输入错误，请重新输入密码！！"); 
 	    }else {
 	        //3.将返回的User对象放入session域中
 	    	ActionContext.getContext().getSession().put("User", existU);
